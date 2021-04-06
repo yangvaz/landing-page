@@ -23,6 +23,10 @@ function Landing() {
         </div>
 
       </header>
+
+      <section className="cards">
+
+      </section>
   
     </div>
   );

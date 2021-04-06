@@ -7,7 +7,6 @@
 .main-container {
   width: 100vw;
   height: 100vh;
-
   font-family: 'Montserrat', sans-serif;
 
   background-color: rgb(214, 214, 214);
@@ -41,23 +40,71 @@ button {
   color: #fff;
 }
 
-.navbar {
+header .navbar {
   display: flex;
   justify-content: space-between;
 
-  margin: auto 30px;
-  padding: 20px;
+  margin: 0 30px;
 }
 
-.navbar p {
+header .navbar p {
   font-weight: bold;
 }
 
-.navbar ul {
+header .navbar ul {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
-.navbar li {
+header .navbar ul li {
   margin: 0 15px;
 }
+
+.cards {
+  height: 500px;
+}
+
+/* Parte da responsividade */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  header {
+    
+  }
+ }
+
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+  .main-container {
+    height: calc(100vh - 55px);
+  }
+
+  header .navbar ul {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+
+    font-weight: bold;
+    background: #131F33;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .navbar p {
+    width: 100%;
+    text-align: center;
+  }
+
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
