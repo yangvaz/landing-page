@@ -19,7 +19,7 @@ header {
 
 .header-content {
   max-width: 500px;
-  margin: 200px auto;
+  margin: 150px auto;
 
   text-align: center;
 }
@@ -38,11 +38,14 @@ button {
   font-weight: bold;
   background: #131F33;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 55px;
 
   margin: 0 30px;
 }
@@ -61,8 +64,98 @@ header .navbar ul li {
   margin: 0 15px;
 }
 
-.cards {
-  height: 500px;
+.pacotes {
+  /* height: 500px; */
+  background: #bbd0ff;
+  padding: 1rem;
+}
+
+.pacotes .cardsContainer {
+  display: flex;
+}
+
+.pacotes .pacotesTitle {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #131f33;
+}
+
+.pacotes .card {
+  width: 250px;
+  height: 350px;
+  margin: 1.5rem;
+
+  border-radius: 24px 0px;
+  background: #fff;
+  color: #000;
+  position: relative;
+}
+
+.pacotes .card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 1.5rem 0 0 0;
+  margin: auto;
+}
+
+.pacotes .card-content {
+  padding: 1rem 1rem;
+}
+
+.pacotes .card-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.pacotes .card-content ul li {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
+
+  color: #505050;
+  font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.4rem;
+}
+
+.card-content h1 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pacotes .card .card-tag-top {
+  position: absolute;
+  right: 0;
+  top: 15px;
+
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+  background: #0034a3;
+  color: #fff;
+}
+
+.pacotes .card .card-tag-bottom {
+  position: absolute;
+  left: 0;
+  top: calc(200px - 0.8rem);
+  background: orange;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 /* Parte da responsividade */
@@ -94,6 +187,8 @@ header .navbar ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 10;
   }
 
   header .navbar p {
