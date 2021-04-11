@@ -1,5 +1,5 @@
 import "../styles/pages/landing.css";
-import { Circle, Coffee, Gitlab, Wifi } from "react-feather";
+import { Coffee, Gitlab, Wifi } from "react-feather";
 
 function Landing() {
   return (
@@ -7,7 +7,7 @@ function Landing() {
       <header>
         <nav className="navbar">
           {/* <img src="" alt="Logo landing page" /> */}
-          <p> Portfólio Yan </p>
+          <p> Desenvolvido por Yan </p>
           <ul>
             <li> Nome </li>
             <li> Github </li>
@@ -17,7 +17,7 @@ function Landing() {
         </nav>
 
         <div className="header-content">
-          <h1> Header Image </h1>
+          <h1> E-commerce </h1>
           <p> Detalhes do título acima.... </p>
           <button> Saiba mais </button>
         </div>

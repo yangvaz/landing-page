@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [Feather Icons](https://feathericons.com/?query=circle)
 - [React](https://reactjs.org)
-<!-- - [TypeScript](https://www.typescriptlang.org/) -->
+- [TypeScript](https://www.typescriptlang.org/)
 
 ---
 
