@@ -13,13 +13,13 @@
 }
 
 header {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 400px);
   background: no-repeat center/cover url('../../assets/header-image.jpg');
 }
 
 .header-content {
   max-width: 500px;
-  margin: 150px auto;
+  margin: 100px auto;
 
   text-align: center;
 }
@@ -29,7 +29,7 @@ header {
   margin-bottom: 20px;
 }
 
-button {
+button.saibaMais {
   margin-top: 20px;
   padding: 10px 15px;
   border-radius: 8px;
@@ -50,8 +50,34 @@ header .navbar {
   margin: 0 30px;
 }
 
+header .navbar .logomarkDeveloper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 header .navbar p {
   font-weight: bold;
+  display: flex;
+}
+
+header .navbar .avocadoIcon {
+  height: calc(1rem * 1.5);
+  width: calc(1rem * 1.5);
+
+  display: flex;
+  margin-left: 5px;
+}
+
+header .navbar .githubLink {
+  height: calc(1rem * 1.5);
+  width: calc(1rem * 1.5);
+  color: #fff;
+
+  display: flex;
+  margin-left: 5px;
 }
 
 header .navbar ul {
@@ -62,6 +88,21 @@ header .navbar ul {
 
 header .navbar ul li {
   margin: 0 15px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .navbar ul li div.faleConosco {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 6px;
+  font-size: 0.9rem;
+
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .pacotes {
@@ -89,6 +130,10 @@ header .navbar ul li {
   height: 350px;
   margin: 1.5rem;
 
+  cursor: pointer;
+
+  box-shadow: 5px 5px 5px #9aacd3;
+  /* box-shadow: inset 0 0 0.5em blue; */
   border-radius: 24px 0px;
   background: #fff;
   color: #000;
@@ -100,6 +145,7 @@ header .navbar ul li {
   height: 200px;
   border-radius: 1.5rem 0 0 0;
   margin: auto;
+  object-fit: cover;
 }
 
 .pacotes .card-content {
@@ -161,13 +207,81 @@ header .navbar ul li {
   color: #fff;
 }
 
+.services {
+  padding: 1rem;
+}
+
+.services .servicesTitle {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+
+.services .containerInfoServices {
+  max-width: 950px;
+  
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.services .infoService {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 30px;
+}
+
+.services .infoService svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 2.2rem;
+
+  transition: all 1s;
+}
+
+.services .infoService svg:hover {
+  stroke: #1D61D0;
+  transform: scale(1.1);
+}
+
+.services .infoService .textContent {
+  height: 180px;
+
+  text-align: center;
+}
+
+.services .infoService h3 {
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.services .infoService span {
+  color: grey;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+button.howThisWorks {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 0;
+
+  cursor: pointer;
+  /* font-weight: ; */
+  background: #1D61D0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Parte da responsividade */
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
-  header {
-    
-  }
+
  }
 
  /* Landscape phones and down */
@@ -194,9 +308,13 @@ header .navbar ul li {
     z-index: 10;
   }
 
-  header .navbar p {
+  header .navbar .logomarkDeveloper {
     width: 100%;
     text-align: center;
+  }
+  
+  button.howThisWorks.last {
+    margin-bottom: 55px;
   }
 
  }
