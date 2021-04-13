@@ -1,5 +1,5 @@
 <h1 align="center">
-    <!-- <img src=""> --> {Imagem pra demonstra o projeto aqui em breve}
+    <!-- <img src=""> --> {Imagem pra demonstrar o projeto aqui em breve}
 </h1>
 
 <br />
@@ -16,10 +16,12 @@
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
 
+<br />
+
 ## 🔖 &nbsp; Sobre
 <hr />
 
-Inicialmente se trata de uma Landing Page comum.
+Um site genérico que representa uma agência de viagens
 ---
 <hr/>
 
@@ -29,9 +31,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [Feather Icons](https://feathericons.com/?query=circle)
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Leaflet](https://leafletjs.com)
+- [Mapbox](https://www.mapbox.com)
+- [Feather Icons](https://feathericons.com/?query=circle)
 
 ---
 
@@ -40,10 +44,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```bash
 
     # Clonar o repositório
-    $ git clone https://github.com/yangvaz/landing-page
+    $ git clone https://github.com/yangvaz/travel-agency
 
     # Entrar no diretório
-    $ cd landing-page
+    $ cd travel-agency
 
     # Instalar as dependências
     $ yarn install
