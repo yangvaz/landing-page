@@ -277,6 +277,20 @@ button.howThisWorks {
   font-family: 'Montserrat', sans-serif;
 }
 
+.map {
+  height: 400px;
+  width: 100vw;
+
+  position: relative;
+  display: flex;
+}
+
+.map .leaflet-container {
+  z-index: 5;
+} 
+
+
+
 /* Parte da responsividade */
 
 /* Landscape phone to portrait tablet */

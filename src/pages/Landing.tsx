@@ -1,16 +1,23 @@
-import "../styles/pages/landing.css";
 import {
   Camera,
   Coffee,
   GitHub,
   Gitlab,
-  Map,
+  Map as MapIcon,
   Navigation,
   Wifi,
 } from "react-feather";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
+import "../styles/pages/landing.css";
+import "../styles/pages/leaflet.css";
+import mapIcon from '../utils/mapMarker';
+
 import avocadoIcon from "../assets/avocado-icon.png";
 
 function Landing() {
+
+
   return (
     <div className="main-container">
       <header>
@@ -177,9 +184,8 @@ function Landing() {
       <section className="services">
         <h1 className="servicesTitle"> Serviços </h1>
         <div className="containerInfoServices">
-
           <div className="infoService">
-            <Map />
+            <MapIcon />
             <div className="textContent">
               <h3> Tours guiados </h3>
               <span>
@@ -219,7 +225,32 @@ function Landing() {
             </div>
             <button className="howThisWorks last"> How this works ? </button>
           </div>
+        </div>
+      </section>
 
+      <section className="contato">
+        <div className="map">
+          <MapContainer
+            center={[48.8583701,2.2922926]}
+            zoom={13.5}
+            style={{ width: '100%', height: '100%' }}
+          >
+           <TileLayer
+            url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+           />
+
+           <Marker
+            key={1}
+            position={[48.8583701,2.2922926]}
+            icon={mapIcon}
+           >
+             <Popup>
+               generic pop up
+             </Popup>
+          </Marker>
+
+          </MapContainer>
+            
         </div>
       </section>
     </div>
