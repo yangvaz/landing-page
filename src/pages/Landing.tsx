@@ -16,8 +16,6 @@ import mapIcon from '../utils/mapMarker';
 import avocadoIcon from "../assets/avocado-icon.png";
 
 function Landing() {
-
-
   return (
     <div className="main-container">
       <header>
@@ -229,6 +227,19 @@ function Landing() {
       </section>
 
       <section className="contato">
+        <div className="contato-card">
+
+        <h1> Entre em contato </h1> 
+          <ul>
+            <li> <Coffee />  Champ de Mars, 5 Avenue Anatole </li>
+            <li> <Coffee /> contato@travel-agency.com.br </li>
+            <li> <Coffee /> (31) 9 9422-4699 </li>
+          </ul>
+
+        </div>
+          
+
+
         <div className="map">
           <MapContainer
             center={[48.8583701,2.2922926]}

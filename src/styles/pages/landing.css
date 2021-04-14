@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .main-container {
   width: 100vw;
   height: 100vh;
@@ -289,9 +293,86 @@ button.howThisWorks {
   z-index: 5;
 } 
 
+.contato {
+  background: #bbd0ff;
+  position: relative;
+}
 
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  border-radius: 8px;
+  background: #fff;
+
+  color: #000;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+  z-index: 6;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contato .contato-card h1 {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.contato .contato-card li {
+  display: flex;
+  align-items: center;
+
+  font-size: .8rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.contato .contato-card li svg {
+  width: 1rem;
+  margin: 10px;
+}
 
 /* Parte da responsividade */
+
+/* Large desktop */
+@media (max-width: 1150px) {
+  
+  .contato .contato-card {
+    width: 300px;
+    height: 220px;  
+    top: calc(50% - 110px);
+    left: calc(15% - 150px);
+
+    padding: 20px;
+  }
+ }
+
+/* ajustando o mapa abaixo */
+@media (max-width: 950px) { 
+  .contato {
+
+  }
+  .contato .contato-card {
+
+  }
+}
+/* ajustando o mapa abaixo */
+@media (max-width: 750px) { 
+  .contato {
+    padding: 25px 0;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
@@ -335,6 +416,3 @@ button.howThisWorks {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {  }
-
-/* Large desktop */
-@media (min-width: 1200px) {  }
