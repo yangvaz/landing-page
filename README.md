@@ -36,6 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Leaflet](https://leafletjs.com)
 - [Mapbox](https://www.mapbox.com)
 - [Feather Icons](https://feathericons.com/?query=circle)
+- [React Scroll](https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react-pt)
 
 ---
 

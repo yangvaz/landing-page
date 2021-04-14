@@ -3,21 +3,26 @@ import {
   Coffee,
   GitHub,
   Gitlab,
+  Mail,
   Map as MapIcon,
+  MapPin,
   Navigation,
+  Phone,
   Wifi,
 } from "react-feather";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import "../styles/pages/landing.css";
 import "../styles/pages/leaflet.css";
-import mapIcon from '../utils/mapMarker';
+import mapIcon from "../utils/mapMarker";
 
 import avocadoIcon from "../assets/avocado-icon.png";
 
 function Landing() {
   return (
-    <div className="main-container">
+    <div id="home" className="main-container">
       <header>
         <nav className="navbar">
           <div className="logomarkDeveloper">
@@ -29,12 +34,28 @@ function Landing() {
             </a>
           </div>
           <ul>
-            <li> Destinos </li>
-            <li> Pacotes </li>
-            <li> Promoções </li>
+            <li>
+              <Link to="home" smooth={true} duration={1000}>
+                Home{" "}
+              </Link>
+            </li>
             <li>
               {" "}
-              <div className="faleConosco"> Fale conosco </div>{" "}
+              <Link to="pacotes" smooth={true} duration={1000}>
+                {" "}
+                Pacotes{" "}
+              </Link>
+            </li>
+            <li>
+              <Link to="servicos" smooth={true} duration={1000}>
+                Serviços
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="contato" smooth={true} duration={1000}>
+                <div className="faleConosco"> Contato </div>{" "}
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,7 +70,7 @@ function Landing() {
         </div>
       </header>
 
-      <section className="pacotes">
+      <section id="pacotes" className="pacotes">
         <h1 className="pacotesTitle"> Pacotes em destaque </h1>
 
         <div className="cardsContainer">
@@ -179,7 +200,7 @@ function Landing() {
         </div>
       </section>
 
-      <section className="services">
+      <section id="servicos" className="services">
         <h1 className="servicesTitle"> Serviços </h1>
         <div className="containerInfoServices">
           <div className="infoService">
@@ -226,42 +247,39 @@ function Landing() {
         </div>
       </section>
 
-      <section className="contato">
+      <section id="contato" className="contato">
         <div className="contato-card">
-
-        <h1> Entre em contato </h1> 
+          <h1> Entre em contato </h1>
           <ul>
-            <li> <Coffee />  Champ de Mars, 5 Avenue Anatole </li>
-            <li> <Coffee /> contato@travel-agency.com.br </li>
-            <li> <Coffee /> (31) 9 9422-4699 </li>
+            <li>
+              {" "}
+              <MapPin /> Champ de Mars, 5 Avenue Anatole{" "}
+            </li>
+            <li>
+              {" "}
+              <Mail /> contato@travel-agency.com.br{" "}
+            </li>
+            <li>
+              {" "}
+              <Phone /> (31) 9 9422-4699{" "}
+            </li>
           </ul>
-
         </div>
-          
-
 
         <div className="map">
           <MapContainer
-            center={[48.8583701,2.2922926]}
+            center={[48.8583701, 2.2922926]}
             zoom={13.5}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
-           <TileLayer
-            url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
-           />
+            <TileLayer
+              url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+            />
 
-           <Marker
-            key={1}
-            position={[48.8583701,2.2922926]}
-            icon={mapIcon}
-           >
-             <Popup>
-               generic pop up
-             </Popup>
-          </Marker>
-
+            <Marker key={1} position={[48.8583701, 2.2922926]} icon={mapIcon}>
+              <Popup>generic pop up</Popup>
+            </Marker>
           </MapContainer>
-            
         </div>
       </section>
     </div>
