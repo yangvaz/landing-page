@@ -11,8 +11,7 @@ import {
   Wifi,
 } from "react-feather";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import "../styles/pages/landing.css";
 import "../styles/pages/leaflet.css";
