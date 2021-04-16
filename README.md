@@ -5,7 +5,7 @@
 <br />
 
 <h3 align="center">
-   [Clique e veja o website](https://sleepy-shaw-10bd7d.netlify.app)
+    <a href="https://sleepy-shaw-10bd7d.netlify.app"> Clique e veja o website </a>
 <h3 >
 
 <br />
