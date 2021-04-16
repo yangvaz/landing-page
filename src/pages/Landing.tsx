@@ -21,6 +21,7 @@ import avocadoIcon from "../assets/avocado-icon.png";
 
 const TOKEN_MAPBOX = process.env.REACT_APP_MAPBOX_TOKEN;
 const DARK_STYLE = 'cknjre7ng123617nkyiyncfrn';
+const URL_MAP = `https://api.mapbox.com/styles/v1/yangvaz/${DARK_STYLE}/tiles/256/{z}/{x}/{y}@2x?access_token=${TOKEN_MAPBOX}`;
 
 function Landing() {
   return (
@@ -274,9 +275,7 @@ function Landing() {
             zoom={13.5}
             style={{ width: "100%", height: "100%" }}
           >
-            <TileLayer
-              url={`https://api.mapbox.com/styles/v1/yangvaz/${DARK_STYLE}/tiles/256/{z}/{x}/{y}@2x?access_token=${TOKEN_MAPBOX}`}
-            />
+            <TileLayer url={URL_MAP} />
 
             <Marker key={1} position={[48.8583701, 2.2922926]} icon={mapIcon}>
               <Popup>generic pop up</Popup>
