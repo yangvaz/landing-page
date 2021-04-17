@@ -379,12 +379,7 @@ button.howThisWorks {
 
  }
 
- /* Landscape phones and down */
-@media (max-width: 480px) {
-  .main-container {
-    height: calc(100vh - 55px);
-  }
-
+ @media (max-width: 600px) {
   header .navbar ul {
     position: fixed;
     width: 100%;
@@ -407,9 +402,25 @@ button.howThisWorks {
     width: 100%;
     text-align: center;
   }
+ }
+
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+  .main-container {
+    height: calc(100vh - 55px);
+  }
+
+  .header-content {
+    margin: 80px auto;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
   
   button.howThisWorks.last {
-    margin-bottom: 55px;
+    margin-bottom: 0px;
   }
 
  }
