@@ -33,18 +33,6 @@ header {
   margin-bottom: 20px;
 }
 
-button.saibaMais {
-  margin-top: 20px;
-  padding: 10px 15px;
-  border-radius: 8px;
-  border: 0;
-
-  font-weight: bold;
-  background: #131F33;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -416,7 +404,7 @@ button.howThisWorks {
   
   .header-content h1 {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   button.howThisWorks.last {

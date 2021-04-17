@@ -69,7 +69,6 @@ function Landing() {
             {" "}
             Os melhores pacotes e experiências de viagem estão aqui. Conheça.{" "}
           </p>
-          <button className="saibaMais"> Saiba mais </button>
         </div>
       </header>
 
