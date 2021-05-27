@@ -203,7 +203,7 @@ function Landing() {
       </section>
 
       <section id="servicos" className="services">
-        <h1 className="servicesTitle"> Serviços </h1>
+        <h1 className="servicesTitle"> <a href="tel:31-99155-4651">(31) 99155-4650</a> Serviços </h1>
         <div className="containerInfoServices">
           <div className="infoService">
             <MapIcon />
